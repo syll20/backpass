@@ -1,0 +1,36 @@
+{
+  "name": "backpass",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Tiny keystroke-encoding library (Backpass) for capturing typed sequences with special-key tokens.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/backpass.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "vitest"
+  },
+  "keywords": [
+    "backpass",
+    "keystroke",
+    "password",
+    "security",
+    "behavioral"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.0",
+    "rollup": "^3.29.5",
+    "typescript": "^5.7.2",
+    "vitest": "^1.2.0"
+  },
+  "dependencies": {
+    "jsdom": "^27.0.0",
+    "tslib": "^2.8.1"
+  }
+}

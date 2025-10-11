@@ -1,0 +1,8 @@
+name: Publish (disabled)
+
+on: []
+
+# Automated publishing was removed per maintainer request. This file is intentionally
+# kept as a no-op placeholder. To re-enable publishing, add a workflow that builds
+# and tests the package; publishing should be handled from a secure, authenticated
+# environment.
