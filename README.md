@@ -88,6 +88,7 @@ Encoding notes
 
 
 Why?
+
 Why not?
 
 
@@ -160,39 +161,4 @@ Privacy & storage guidance
 
 - Treat `backpass` as behavioral data. Consider hashing the value before storing it and keep retention policies short.
 - Add explicit user consent in UX if required by your policy/regulation.
-
-Publishing to npm & GitHub (notes)
-
-This project previously included an automated publish workflow, but automated publishing has been intentionally removed at the request of the maintainer. If you prefer to publish manually, follow this simplified checklist:
-
-1. Ensure `package.json` fields are filled (author, repository, homepage, bugs).
-2. Test build locally:
-  ```bash
-  npm ci
-  npm run build
-  ```
-3. Commit and tag a release (e.g. `v0.1.0`) and push tags:
-  ```bash
-  git tag v0.1.0
-  git push --follow-tags
-  ```
-4. Publishing
-
-If you want to publish a release, build and test locally, then publish using your preferred workflow from an environment where you're authenticated with npm. CI-based publishing was intentionally removed from this repository.
-
-CI and tests
-
-- We included a minimal GitHub Actions workflow that builds the package on push/PR. Add unit tests (vitest) covering encoding and reset behaviour.
-
-Contributing
-
-- PRs welcome. Keep the core minimal; framework adapters should be small and optional.
-
-License
-
-MIT — see the LICENSE file.
-
-Contact / Maintainer
-
-Add your name/email in package.json and README before publishing.
 
